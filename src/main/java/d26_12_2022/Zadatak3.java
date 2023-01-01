@@ -1,4 +1,4 @@
-package d_26_12_2022;
+package d26_12_2022;
 //
 //Napisati funkciju koja za dva jednocifrena broja koja su
 // ulazni parametri funkcije vraca novu vrednost koja se

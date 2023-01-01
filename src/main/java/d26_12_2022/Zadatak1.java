@@ -1,4 +1,4 @@
-package d_26_12_2022;
+package d26_12_2022;
 //Napisati metodu stampajVrednostZa10Vecu u kojoj se stampa
 // prosledjena vrednost za 10 veca.Iz main-a pozvati
 // izvrsenje metode za razlicite vrednosti.

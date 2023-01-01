@@ -1,4 +1,4 @@
-package d_26_12_2022;
+package d26_12_2022;
 //Napisati funkciju koja za pronalazi koliko ima celih brojeve izmedju brojeva M i N.
 //
 //Primer izvrsenja:

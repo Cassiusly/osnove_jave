@@ -1,4 +1,4 @@
-package d_26_12_2022;
+package d26_12_2022;
 //Napisati funkciju koja za tri prosledjena broja
 // vraca najmanji od ta 3. U glavnom programu iskoristi
 // funkciju i ispisti odgovarajucu poruku.

@@ -73,5 +73,7 @@ public class Zadatak3 {
 
         System.out.println("Cena registracije " + auto.cenaRegistracije());
 
+
+
         }
     }

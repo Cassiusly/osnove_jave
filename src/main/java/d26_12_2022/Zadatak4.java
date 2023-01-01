@@ -1,4 +1,4 @@
-package d_26_12_2022;
+package d26_12_2022;
 //Napisati metodu koja stampa podatke o korisniku u formatu:
 //JMBG: [jmbg]
 //Ime: [ime]

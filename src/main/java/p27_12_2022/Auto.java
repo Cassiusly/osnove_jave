@@ -9,7 +9,11 @@ public class Auto {
     public int godinaProizvodnje;
     public int mesecRegistracije;
     public int kubikazaAuta;
-
+    public int brojRegistracije;
+    public boolean klimaUpaljena;
+    public int maxBrzina;
+    public int kapacitetRezervoara;
+    public int trenutniRezervoar;
 
     public void stampanje() {
         System.out.println(this.imeIPrezimeVozaca);
@@ -45,15 +49,62 @@ public class Auto {
     public boolean isteklaRegistracija(int trenutniMesec) {
         if (trenutniMesec > mesecRegistracije) {
             return true;
-            } else {
+        } else {
             return false;
-}
+        }
     }
-    public int cenaRegistracije () {
+
+    public int cenaRegistracije() {
         int cena = kubikazaAuta * 100;
         if (kubikazaAuta > 2000) {
             cena = cena * 130 / 100;
         }
-                return cena;
+        return cena;
+    }
+
+    public void dodajGas(int kolicinaGasa) {
+        this.trenutnaBrzina = this.trenutnaBrzina + 10;
+        this.trenutnaBrzina += kolicinaGasa;
+        if (this.trenutnaBrzina > this.maxBrzina) {
+            this.trenutnaBrzina = this.maxBrzina;
         }
+    }
+
+    public void koci() {
+        this.trenutnaBrzina = this.trenutnaBrzina - 10;
+        if (trenutnaBrzina < 0) {
+            trenutnaBrzina = 0;
+        }
+    }
+
+    public double potrosnjaAuta(double potrosnja) {
+        double faktorKlime = 1.0;
+        if (klimaUpaljena) {
+            faktorKlime = 1.2;
+        }
+        return potrosnja * faktorKlime;
+    }
+
+    public void stampajTablu() {
+        int procenat = (this.trenutnaBrzina * 100) / this.maxBrzina;
+
+        for (int i = 0; i < 100; i++) {
+
+            if (i <= procenat) {
+                System.out.print("|");
+            } else {
+                System.out.print(".");
+            }
+        }
+
+//        }
+//        public int natociGorivo (int litarNatocen) {
+//        int cenaGorivaPoLitru = 210;
+//        if (kapacitetRezervoara > 1) {
+//
+//        }
+//
+//        }
+//}
+    }
 }
