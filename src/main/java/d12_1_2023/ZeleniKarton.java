@@ -58,7 +58,7 @@ public class ZeleniKarton {
 
         // Metoda da li je polozio
         public String jePolozio() {
-            if (ocena > 5) {
+            if (this.ocena > 5) {
                 return "Polozio";
             } else {
                 return "Nije polozio";
@@ -67,8 +67,8 @@ public class ZeleniKarton {
 
         // Metoda stampanje
         public void stampaj() {
-            System.out.println(nazivPredmeta + " - " + ocena);
-            System.out.println("Student: " + studentImePrezime + ", " + studentIndex);
-            System.out.println("Professor: " + profesorImePrezime);
+            System.out.println(this.nazivPredmeta + " - " + this.ocena);
+            System.out.println("Student: " + this.studentImePrezime + ", " + this.studentIndex);
+            System.out.println("Professor: " + this.profesorImePrezime);
         }
 }
