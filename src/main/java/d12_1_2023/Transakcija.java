@@ -45,9 +45,9 @@ public class Transakcija {
     // Metoda provizija
     private double provizija(double suma) {
         if (suma < 4500) {
-            return 0.45;
+            return 45;
         } else {
-            return 0.01;
+            return suma * 0.01;
         }
     }
 
