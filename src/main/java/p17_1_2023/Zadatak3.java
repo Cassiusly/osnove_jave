@@ -6,5 +6,6 @@ public class Zadatak3 {
      jt.stampaj();
      Pravougaonik p = new Pravougaonik(10, 5);
      p.stampaj();
+
     }
 }
