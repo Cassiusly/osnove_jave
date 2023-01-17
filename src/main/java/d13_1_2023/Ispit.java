@@ -57,6 +57,8 @@ public class Ispit {
         }
     }
     public void stampaj(){
-        System.out.println(this.nazivPredmeta + " - " + this.imeProfesora + " - " + this.ocena);
+
+        System.out.println(this.nazivPredmeta +
+                " - " + this.imeProfesora + " - " + this.ocena);
     }
 }
