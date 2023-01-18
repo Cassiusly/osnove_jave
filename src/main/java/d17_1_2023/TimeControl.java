@@ -16,7 +16,7 @@ public class TimeControl extends Control{
             if(videoPlayer.getTrenutnoVreme() + 15 > videoPlayer.getDuzina()) {
                 videoPlayer.setTrenutnoVreme(videoPlayer.getDuzina());
             } else {
-                videoPlayer.setTrenutnoVreme(videoPlayer.getTrenutnoVreme());
+                videoPlayer.setTrenutnoVreme(videoPlayer.getTrenutnoVreme()+15);
             }
                 if (videoPlayer.getTrenutnoVreme() - 15 < 0) {
                     videoPlayer.setTrenutnoVreme(0);
