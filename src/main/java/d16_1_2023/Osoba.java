@@ -1,4 +1,4 @@
-package d16_1_2023;
+package d16_12_2022;
 //Kreirati klasu Osoba koja ima:
 //ime i prezime
 //jmbg
@@ -7,22 +7,22 @@ package d16_1_2023;
 //konstuktor sa parametrima
 //gettere i settere
 //metodu stampaj koja stampa u formatu:
-//(ime i prezime), (jmbg), (godina rodjenja)
 public class Osoba {
     protected String imePrezime;
     protected String jmbg;
     protected int godRodjenja;
 
-//    Konstruktor default
+    //    Konstruktori
     public Osoba () {
     }
-//    Konsturktor sa parametrima
-    public Osoba (String imePrezime, String jmbg, int godRodjenja) {
+
+    public Osoba(String imePrezime, String jmbg, int godRodjenja) {
         this.imePrezime = imePrezime;
         this.jmbg = jmbg;
         this.godRodjenja = godRodjenja;
     }
-//    Getteri i setteri
+
+    //    Getteri i setteri
 
     public String getImePrezime() {
         return imePrezime;
@@ -47,7 +47,8 @@ public class Osoba {
     public void setGodRodjenja(int godRodjenja) {
         this.godRodjenja = godRodjenja;
     }
-//    Stampanje
+
+    //    Stampanje
     public void stampaj () {
         System.out.println(this.imePrezime + ", " + this.jmbg + ", " + this.godRodjenja);
     }

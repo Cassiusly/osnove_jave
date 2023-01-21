@@ -1,33 +1,44 @@
-package d16_1_2023;
+package d16_12_2022;
+
+import java.util.ArrayList;
+
 //Kreirati klasu Igrac koja nasledjuje klasu Osoba i koja ima:
 //broj (broj koji igrac nosi)
 //poziciju koju igra (odbrambeni, napadac, … )
+//niz kartona
 //kapiten (promenljiva koja kaze da li je igrac kapiten tima, i tipa je boolean)
 //default-ni konstuktor
 //konstuktor sa parametrima
 //gettere i settere za broj, kapiten i poziciju
+//metodu dodaj karton, gde se dodaje karton u niz
+//metodu koja vraca broj zutih kartona
+//metodu koja vraca broj crvenih kartona
 //metodu stampaj, koju prepisuje iz glavne klase, tako da stampa sve informacije o igracu
 public class Igrac extends Osoba{
-    private int broj;
+    private int brojDresa;
     private String pozicija;
-    private boolean kapiten;
-//    Konstruktor default
-    public Igrac () {
-    }
-    public Igrac (String imePrezime,String jmbg, int godRodjenja, int broj, String pozicija, boolean kapiten) {
-        super (imePrezime, jmbg, godRodjenja);
-        this.broj = broj;
+    ArrayList <Karton> karton = new ArrayList<>();
+    private boolean jeKapiten;
+
+    //    Defaultni konstruktor
+    public Igrac () {}
+
+    //    Konstruktor sa parametrima
+
+    public Igrac(String imePrezime, String jmbg, int godRodjenja, int brojDresa, String pozicija, ArrayList<Karton> karton, boolean jeKapiten) {
+        super(imePrezime, jmbg, godRodjenja);
+        this.brojDresa = brojDresa;
         this.pozicija = pozicija;
-        this.kapiten = kapiten;
-    }
-//    Getter i setteri
-
-    public int getBroj() {
-        return broj;
+        this.karton = karton;
+        this.jeKapiten = jeKapiten;
     }
 
-    public void setBroj(int broj) {
-        this.broj = broj;
+    public int getBrojDresa() {
+        return brojDresa;
+    }
+
+    public void setBrojDresa(int brojDresa) {
+        this.brojDresa = brojDresa;
     }
 
     public String getPozicija() {
@@ -38,18 +49,16 @@ public class Igrac extends Osoba{
         this.pozicija = pozicija;
     }
 
-    public boolean isKapiten() {
-        return kapiten;
+    public boolean isJeKapiten() {
+        return jeKapiten;
     }
 
-    public void setKapiten(boolean kapiten) {
-        this.kapiten = kapiten;
+    public void setJeKapiten(boolean jeKapiten) {
+        this.jeKapiten = jeKapiten;
     }
-    @Override
-    public void stampaj (){
-        super.stampaj();
-        System.out.println("Broj: " + this.broj);
-        System.out.println("Pozicija: " + this.pozicija);
-        System.out.println("Kapiten: " + this.kapiten);
+
+//    Mtoda dodavanje katona
+    public void dodajKarton () {
+
     }
 }
